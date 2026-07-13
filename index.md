@@ -101,6 +101,8 @@ I am Junkai Chen (**陈**俊凯), a Ph.D. student at [Singapore Management Unive
   Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">ACL 2026 Main</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
   [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
+  <span class="pub-note">🔥 SAC Highlight Award.</span>
+
 
 - [**Out of Distribution, Out of Luck: How Well Can LLMs Trained on Vulnerability Datasets Detect Top 25 CWE Weaknesses?**](https://arxiv.org/abs/2507.21817)<br/>
   Yikun Li, Ngoc Tan Bui, Ting Zhang, Chengran Yang, Xin Zhou, Martin Weyssow, Jinfeng Jiang, **Junkai Chen**, Huihui Huang, Huu Hung Nguyen, Chiok Yew Ho, Jie Tan, Ruiyin Li, Yide Yin, Han Wei Ang, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
