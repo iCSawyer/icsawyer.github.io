@@ -255,8 +255,49 @@ a {
 /* ── Sidebar ── */
 
 @media (max-width: 1023px) {
+  /* Hide the full author profile on mobile, but surface the social/contact
+     links (incl. Google Scholar) as a compact row at the top. */
   .sidebar {
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .sidebar .author__avatar,
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper button {
     display: none;
+  }
+
+  .sidebar .author__urls-wrapper {
+    display: block;
+  }
+
+  .sidebar .author__urls.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em 1.2em;
+    position: static;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    z-index: auto;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 }
 
