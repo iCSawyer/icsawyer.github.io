@@ -115,7 +115,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 # Awards
 - <span style="color: darkred; font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</span>, ACM SIGSOFT, 2024
 - National Scholarship, Ministry of Education of P.R.C., 2024
-- SMU SCIS Research Excellence Award, SMU, 2025
+- SMU SCIS Research Excellence Award, SMU, 2025, 2026
 - ACM SIGSOFT CAPS Travel Grant, 2025
 
 ***
