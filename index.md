@@ -74,6 +74,11 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 <details class="pub-section" markdown="block">
   <summary class="section-heading">Other Publications <span class="expand-hint">— click to expand</span></summary>
 
+- [**SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements**](https://arxiv.org/abs/2607.27409)<br/>
+  Pengyu Xue, He Yang Yuan, Xin Wang, **Junkai Chen**, Haonan Zhang, Boyuan Chen, Zishuo Ding, Zhenhao Li, and Weiyi Shang.<br/>
+  <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
+  [<a href="https://arxiv.org/pdf/2607.27409" target="_blank">PDF</a>]
+
 - [**Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild**](https://arxiv.org/abs/2603.28592)<br/>
   Yue Liu, Ratnadira Widyasari, Yanjie Zhao, Ivana Clairine Irsan, **Junkai Chen**, David Lo
 <br/>
