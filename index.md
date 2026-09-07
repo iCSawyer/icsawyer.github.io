@@ -31,12 +31,6 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://www.arxiv.org/pdf/2509.22097" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/SecureVibeBench" target="_blank">Code</a>][<a href="https://huggingface.co/datasets/iCSawyer/SecureVibeBench" target="_blank">Dataset</a>]
   <!-- <span class="pub-note">🔥 SecureVibeBench is the first SWE-bench-level benchmark for secure vibe coding.</span> -->
 
-<!--26.10?-->
-- [**AgentExecutor: Partial Code Execution via Agentic Context Generation**](https://arxiv.org/abs/2608.05959)<br/>
-  <strong>Junkai Chen</strong>, Chengran Yang, Xing Hu, Zhenhao Li, Xin Xia, and David Lo.<br/>
-  <span class="pub-venue">ASE 2026</span> <span class="pub-venue-full">The 41th IEEE/ACM International Conference on Automated Software Engineering</span><br/>
-  [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
-
 <!--25.09?-->
 - [**Reasoning Runtime Behavior of a Program with LLM: How Far Are We?**](https://dl.acm.org/doi/10.1109/ICSE55347.2025.00012)<br/>
   <strong>Junkai Chen<span class="eq-contrib">*</span></strong>, Zhiyuan Pan<span class="eq-contrib">*</span>, Xing Hu, Zhenhao Li, Ge Li, and Xin Xia.<br/>
@@ -59,12 +53,23 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://arxiv.org/pdf/2504.04699" target="_blank">PDF</a>][<a href="https://github.com/martin-wey/R2Vul" target="_blank">Code</a>]
   <span class="pub-note">🔥 One of the top-liked papers in software engineering at <a href="https://www.alphaxiv.org/?subcategories=%5B%22software-engineering%22%5D&sort=Likes" style="text-decoration: underline;">alphaXiv</a>.</span>
 
-<!--25.12-->
-- [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
-  Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
-  <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
-  [<a href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a>][<a href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a>]<br/>
-  <span class="pub-note">🔥 Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
+<!--26.07-->
+- [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
+  Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
+  <span class="pub-venue">ACL 2026 Main</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
+  [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
+  <span class="pub-note">🔥 SAC Highlight Award.</span>
+
+
+
+<details class="pub-section" markdown="block">
+  <summary class="section-heading">Other Publications <span class="expand-hint">— click to expand</span></summary>
+
+<!--26.10?-->
+- [**AgentExecutor: Partial Code Execution via Agentic Context Generation**](https://arxiv.org/abs/2608.05959)<br/>
+  <strong>Junkai Chen</strong>, Chengran Yang, Xing Hu, Zhenhao Li, Xin Xia, and David Lo.<br/>
+  <span class="pub-venue">ASE 2026</span> <span class="pub-venue-full">The 41th IEEE/ACM International Conference on Automated Software Engineering</span><br/>
+  [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
 
 <!--25.06-->
 - [**Understanding Practitioners' Expectations on Clear Code Review Comments**](https://dl.acm.org/doi/10.1145/3728931)<br/>
@@ -78,9 +83,12 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <span class="pub-venue">TOSEM 2025</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   [<a href="https://dl.acm.org/doi/abs/10.1145/3745764" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/NLPerturbator" target="_blank">Code</a>]
 
-
-<details class="pub-section" markdown="block">
-  <summary class="section-heading">Other Publications <span class="expand-hint">— click to expand</span></summary>
+<!--25.12-->
+- [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
+  Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
+  <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
+  [<a href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a>][<a href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a>]<br/>
+  <span class="pub-note">🔥 Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
 
 - [**SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements**](https://arxiv.org/abs/2607.27409)<br/>
   Pengyu Xue, He Yang Yuan, Xin Wang, **Junkai Chen**, Haonan Zhang, Boyuan Chen, Zishuo Ding, Zhenhao Li, and Weiyi Shang.<br/>
@@ -110,14 +118,6 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <span class="pub-venue">ICSE 2026 (NIER)</span> <span class="pub-venue-full">The 48th IEEE/ACM International Conference on Software Engineering, New Ideas and Emerging Results</span><br/>
   [<a href="https://arxiv.org/pdf/2601.06910" target="_blank">PDF</a>][<a href="https://github.com/huanghuihui0904/PenForge" target="_blank">Code</a>]
 
-<!--26.07-->
-- [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
-  Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
-  <span class="pub-venue">ACL 2026 Main</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
-  [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
-  <span class="pub-note">🔥 SAC Highlight Award.</span>
-
-
 - [**Out of Distribution, Out of Luck: How Well Can LLMs Trained on Vulnerability Datasets Detect Top 25 CWE Weaknesses?**](https://arxiv.org/abs/2507.21817)<br/>
   Yikun Li, Ngoc Tan Bui, Ting Zhang, Chengran Yang, Xin Zhou, Martin Weyssow, Jinfeng Jiang, **Junkai Chen**, Huihui Huang, Huu Hung Nguyen, Chiok Yew Ho, Jie Tan, Ruiyin Li, Yide Yin, Han Wei Ang, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">ICSE 2026</span> <span class="pub-venue-full">The 48th IEEE/ACM International Conference on Software Engineering</span><br/>
@@ -130,8 +130,9 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 
 # Awards
 - <span style="color: darkred; font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</span>, ACM SIGSOFT, 2024
-- National Scholarship, Ministry of Education of P.R.C., 2024
+- SAC Highlight Award, ACL, 2026
 - SMU SCIS Research Excellence Award, SMU, 2025, 2026
+- National Scholarship, Ministry of Education of P.R.C., 2024
 - ACM SIGSOFT CAPS Travel Grant, 2025
 
 ***
