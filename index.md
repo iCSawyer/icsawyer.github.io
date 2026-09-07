@@ -61,6 +61,12 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
   <span class="pub-note">🔥 SAC Highlight Award.</span>
 
+<!--25.12-->
+- [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
+  Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
+  <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
+  [<a href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a>][<a href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a>]<br/>
+  <span class="pub-note">🔥 Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
 
 
 <details class="pub-section" markdown="block">
@@ -84,12 +90,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <span class="pub-venue">TOSEM 2025</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   [<a href="https://dl.acm.org/doi/abs/10.1145/3745764" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/NLPerturbator" target="_blank">Code</a>]
 
-<!--25.12-->
-- [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
-  Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
-  <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
-  [<a href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a>][<a href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a>]<br/>
-  <span class="pub-note">🔥 Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
+
 
 - [**SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements**](https://arxiv.org/abs/2607.27409)<br/>
   Pengyu Xue, He Yang Yuan, Xin Wang, **Junkai Chen**, Haonan Zhang, Boyuan Chen, Zishuo Ding, Zhenhao Li, and Weiyi Shang.<br/>
