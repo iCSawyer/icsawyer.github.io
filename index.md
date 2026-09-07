@@ -6,7 +6,7 @@ title: "Junkai Chen's Homepage"
 
 # Introduction
 
-I am Junkai Chen (**陈**俊凯), a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/) (ACM and IEEE Fellow). I received my master's degree at [Zhejiang University](https://www.zju.edu.cn/english), advised by [Prof. Xing Hu](https://xing-hu.github.io/) and [Prof. Xin Xia](https://xin-xia.github.io) (ACM Distinguished Member). 
+I am Junkai Chen (**陈**俊凯), a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/) (ACM and IEEE Fellow). I also have close collaboration with [Prof. Xing Hu](https://xing-hu.github.io/) and [Prof. Xin Xia](https://xin-xia.github.io) (ACM Distinguished Member) from [Zhejiang University](https://www.zju.edu.cn/english). 
 
 My research spans the intersection of **Software Engineering**, **Artificial Intelligence**, and **Cybersecurity**, and recently focused on AI agents and their applications. 🛫 Feel free to [reach out to me](mailto:junkaichen2000@gmail.com) if you are interested in my works!
 
