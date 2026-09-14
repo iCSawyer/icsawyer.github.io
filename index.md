@@ -22,6 +22,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 - 📌 Check latest SE conference papers at [**SEConfPaperList**](https://github.com/iCSawyer/SEConfPaperList)~.
 
 ***
+{: .no-divider}
 
 # Selected Publications
 
