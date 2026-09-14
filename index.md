@@ -15,7 +15,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 
 # News
 
-- **[2026-09-15] Our paper AgentExecutor received an ACM SIGSOFT Distinguished Paper Award at ASE 2026.**
+- **[2026-09-15] Our paper AgentExecutor received an ACM Distinguished Paper Award at ASE 2026.**
 - [2026-06-18] Our paper about agentic partial execution was accepted by ASE 2026.
 - [2026-04-16] Our paper about speculative decoding was accepted by ISSTA 2026. 
 - [2026-04-07] Two papers about AI and cybersecurity were accepted by ACL 2026.
@@ -53,7 +53,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <strong>Junkai Chen</strong>, Chengran Yang, Xing Hu, Zhenhao Li, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">ASE 2026</span> <span class="pub-venue-full">The 41th IEEE/ACM International Conference on Automated Software Engineering</span><br/>
   [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
-  <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
+  <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM Distinguished Paper Award</a>.</span>
 
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
   Martin Weyssow, Chengran Yang, <strong>Junkai Chen</strong>, Ratnadira Widyasari, Ting Zhang, Huihui Huang, Huu Hung Nguyen, Yan Naing Tun, Tan Bui, Yikun Li, Ang Han Wei, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
@@ -133,8 +133,8 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 
 
 # Awards
-- <span style="color: darkred; font-weight: bold;">ACM Distinguished Paper Award</span> at ASE 2026, ACM SIGSOFT, 2026
-- <span style="color: darkred; font-weight: bold;">ACM Distinguished Paper Award</span> at ICSE 2024, ACM SIGSOFT, 2024
+- <span style="color: darkred; font-weight: bold;">ACM Distinguished Paper Award</span> at ASE 2026, ACM, 2026
+- <span style="color: darkred; font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</span> at ICSE 2024, ACM SIGSOFT, 2024
 - <span style="color: darkred; font-weight: bold;">SAC Highlight Award, ACL, 2026
 - SMU SCIS Research Excellence Award, SMU, 2025, 2026
 - National Scholarship, Ministry of Education of P.R.C., 2024
