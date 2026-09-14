@@ -136,7 +136,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 # Awards
 - <span style="color: darkred; font-weight: bold;">ACM Distinguished Paper Award</span> at ASE 2026, ACM, 2026
 - <span style="color: darkred; font-weight: bold;">ACM SIGSOFT Distinguished Paper Award</span> at ICSE 2024, ACM SIGSOFT, 2024
-- <span style="color: darkred; font-weight: bold;">SAC Highlight Award, ACL, 2026
+- <span style="color: darkred; font-weight: bold;">SAC Highlight Award</span> at ACL 2026, ACL, 2026
 - SMU SCIS Research Excellence Award, SMU, 2025, 2026
 - National Scholarship, Ministry of Education of P.R.C., 2024
 - ACM SIGSOFT CAPS Travel Grant, 2025
