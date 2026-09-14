@@ -55,6 +55,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
   <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM Distinguished Paper Award</a>.</span>
 
+<!--?-->
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
   Martin Weyssow, Chengran Yang, <strong>Junkai Chen</strong>, Ratnadira Widyasari, Ting Zhang, Huihui Huang, Huu Hung Nguyen, Yan Naing Tun, Tan Bui, Yikun Li, Ang Han Wei, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <!-- Martin Weyssow, Chengran Yang, <strong>Junkai Chen<span class="corresp">📧</span></strong>, Ratnadira Widyasari, Ting Zhang, Huihui Huang, Huu Hung Nguyen, Yan Naing Tun, Tan Bui, Yikun Li, Ang Han Wei, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/> -->
