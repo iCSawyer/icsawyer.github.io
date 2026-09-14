@@ -22,7 +22,6 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 - 📌 Check latest SE conference papers at [**SEConfPaperList**](https://github.com/iCSawyer/SEConfPaperList)~.
 
 ***
-{: .no-divider}
 
 # Selected Publications
 
@@ -78,6 +77,8 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a>][<a href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a>]<br/>
   <span class="pub-note">🔥 Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
 
+
+***
 
 <details class="pub-section" markdown="block">
   <summary class="section-heading">Other Publications <span class="expand-hint">— click to expand</span></summary>
