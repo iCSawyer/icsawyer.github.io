@@ -55,6 +55,13 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
   <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM Distinguished Paper Award</a>.</span>
 
+<!--26.07-->
+- [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
+  Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
+  <span class="pub-venue">ACL 2026 Main</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
+  [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
+  <span class="pub-note">🔥 SAC Highlight Award.</span>
+
 <!--?-->
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
   Martin Weyssow, Chengran Yang, <strong>Junkai Chen</strong>, Ratnadira Widyasari, Ting Zhang, Huihui Huang, Huu Hung Nguyen, Yan Naing Tun, Tan Bui, Yikun Li, Ang Han Wei, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
@@ -62,13 +69,6 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <span class="pub-venue">Under review at TOSEM</span> <span class="pub-venue-full">Under review at ACM Transactions on Software Engineering and Methodology</span><br/>
   [<a href="https://arxiv.org/pdf/2504.04699" target="_blank">PDF</a>][<a href="https://github.com/martin-wey/R2Vul" target="_blank">Code</a>]
   <span class="pub-note">🔥 One of the top-liked papers in software engineering at <a href="https://www.alphaxiv.org/?subcategories=%5B%22software-engineering%22%5D&sort=Likes" style="text-decoration: underline;">alphaXiv</a>.</span>
-
-<!--26.07-->
-- [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
-  Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
-  <span class="pub-venue">ACL 2026 Main</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
-  [<a href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>]
-  <span class="pub-note">🔥 SAC Highlight Award.</span>
 
 <!--25.12-->
 - [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
