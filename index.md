@@ -45,7 +45,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   **Junkai Chen**, Xing Hu, Zhenhao Li, Cuiyun Gao, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">ICSE 2024</span> <span class="pub-venue-full">The 46th IEEE/ACM International Conference on Software Engineering</span><br/>
   [<a href="https://ginolzh.github.io/papers/ICSE2024_Code_Suggestion.pdf" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/CodeSuggestion" target="_blank">Code</a>]<br/>
-  <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
+  <span class="pub-note">🏆 <a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
   <!-- acm showcase on kudos??? -->
 
 <!--26.10?-->
@@ -53,7 +53,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
   <strong>Junkai Chen</strong>, Chengran Yang, Xing Hu, Zhenhao Li, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">ASE 2026</span> <span class="pub-venue-full">The 41th IEEE/ACM International Conference on Automated Software Engineering</span><br/>
   [<a href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a>][<a href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>]
-  <span class="pub-note">🏆 <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
+  <span class="pub-note">🏆 <a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
 
 <!--26.07-->
 - [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
