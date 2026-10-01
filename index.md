@@ -150,7 +150,7 @@ My research spans the intersection of **Software Engineering**, **Artificial Int
 
 # Services
 ### Program Committee / Journal Reviewer
-- 2026: NeurIPS, TOSEM, IST, ICSE (Shadow PC), MSR (Junior PC), DL4C@NeurIPS, EASE (AI Models / Data Track), Communications AI & Computing
+- 2026: TSE, NeurIPS, TOSEM, IST, ICSE (Shadow PC), MSR (Junior PC), DL4C@NeurIPS, EASE (AI Models / Data Track), Communications AI & Computing
 - 2025: MSR (Junior PC), DL4C@ICLR, LTB@ICPE
 
 ### Others
