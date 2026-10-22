@@ -484,6 +484,7 @@ $photo-viewer-ease: cubic-bezier(0.25, 0.8, 0.25, 1);
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
+  background: #f0f0f2; /* placeholder while the photo loads */
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 24px 60px -12px rgba(0, 0, 0, 0.3);
 }
 
@@ -494,6 +495,9 @@ $photo-viewer-ease: cubic-bezier(0.25, 0.8, 0.25, 1);
   height: auto;
   max-width: min(88vw, 900px);
   max-height: min(calc(100vh - 150px), 650px);
+  transition: opacity 0.35s ease;
+
+  .photo-viewer.is-loading & { opacity: 0; }
 }
 
 /* Little easter egg under the photo */
@@ -556,6 +560,7 @@ $photo-viewer-ease: cubic-bezier(0.25, 0.8, 0.25, 1);
 @media (prefers-reduced-motion: reduce) {
   .photo-viewer::backdrop,
   .photo-viewer[open] .photo-viewer__frame { animation: none; }
+  .photo-viewer__img { transition: none; }
 }
 
 .page__title { display: none; }

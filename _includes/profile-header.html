@@ -1,7 +1,7 @@
 {% assign author = site.author %}
 <header class="profile-header" itemscope itemtype="http://schema.org/Person">
   {% comment %} A button (not a .jpg link) so the theme's default lightbox stays out of the way {% endcomment %}
-  <button type="button" class="profile-header__photo" data-photo-full="{{ '/assets/images/photo-large.jpg' | relative_url }}" data-photo-alt="{{ author.name }}" data-photo-caption="Thanks for the interest (?) 🤔" aria-label="View larger photo" aria-haspopup="dialog">
+  <button type="button" class="profile-header__photo" data-photo-full="{{ '/assets/images/photo-large.jpg' | relative_url }}" data-photo-size="1200x1500" data-photo-alt="{{ author.name }}" data-photo-caption="Thanks for the interest (?) 🤔" aria-label="View larger photo" aria-haspopup="dialog">
     <img class="profile-header__avatar" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
   </button>
   <div class="profile-header__title">
@@ -32,7 +32,8 @@
 </dialog>
 
 <script>
-  // Any element with data-photo-full opens that photo here (optional data-photo-alt / data-photo-caption)
+  // Any element with data-photo-full opens that photo here
+  // (optional data-photo-size="WxH", data-photo-alt, data-photo-caption)
   (function () {
     var viewer = document.querySelector('.photo-viewer');
     if (!viewer) return;
@@ -64,21 +65,40 @@
     document.addEventListener('focusin', warmUp);
     document.addEventListener('touchstart', warmUp, { passive: true });
 
+    // Size the photo box up front (same limits as the CSS), so it doesn't jump when the photo arrives
+    var ratio = 1;
+    function fit() {
+      var maxW = Math.min(window.innerWidth * 0.88, 900);
+      var maxH = Math.min(window.innerHeight - 150, 650);
+      var w = Math.min(maxW, maxH * ratio);
+      img.style.width = w + 'px';
+      img.style.height = w / ratio + 'px';
+    }
+    window.addEventListener('resize', function () { if (viewer.open) fit(); });
+
+    // Open straight away; the photo fades in once it has loaded
     document.addEventListener('click', function (event) {
       var trigger = triggerFor(event);
       if (!trigger || viewer.open) return;
       var url = trigger.dataset.photoFull;
       if (!viewer.showModal) { window.location.href = url; return; } // very old browsers
-      preload(url).then(function () {
-        img.src = url;
-        img.alt = trigger.dataset.photoAlt || '';
-        viewer.setAttribute('aria-label', img.alt || 'Photo');
-        caption.textContent = trigger.dataset.photoCaption || '';
-        caption.hidden = !trigger.dataset.photoCaption;
-        return img.decode().catch(function () {});
-      }).then(function () {
-        if (!viewer.open) viewer.showModal();
-      });
+
+      var size = (trigger.dataset.photoSize || '').split('x').map(Number);
+      ratio = size[0] && size[1] ? size[0] / size[1] : 4 / 5;
+      fit();
+
+      viewer.classList.add('is-loading');
+      img.src = url;
+      img.alt = trigger.dataset.photoAlt || '';
+      viewer.setAttribute('aria-label', img.alt || 'Photo');
+      caption.textContent = trigger.dataset.photoCaption || '';
+      caption.hidden = !trigger.dataset.photoCaption;
+
+      function reveal() { if (img.src.indexOf(url) !== -1) viewer.classList.remove('is-loading'); }
+      if (img.complete && img.naturalWidth) reveal();
+      else img.decode().then(reveal, reveal);
+
+      viewer.showModal();
     });
 
     // Closing plays the opening animation in reverse, then closes the dialog
@@ -86,10 +106,15 @@
       if (!viewer.open || viewer.classList.contains('is-closing')) return;
       if (reduceMotion.matches) { viewer.close(); return; }
       viewer.classList.add('is-closing');
-      frame.addEventListener('animationend', function () {
+      var done = false;
+      function finish() {
+        if (done) return;
+        done = true;
         viewer.classList.remove('is-closing');
         viewer.close();
-      }, { once: true });
+      }
+      frame.addEventListener('animationend', finish, { once: true });
+      setTimeout(finish, 400); // in case animationend never fires (e.g. a background tab)
     }
 
     // A click anywhere (photo, backdrop or the close button) closes it; so does Esc

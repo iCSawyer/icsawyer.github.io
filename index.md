@@ -15,7 +15,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
 
 # News
 
-- <span class="news-date">2026-09</span> Our paper received an <button type="button" class="photo-link" data-photo-full="{{ '/assets/images/award-ase2026.jpg' | relative_url }}" data-photo-alt="Receiving the ACM SIGSOFT Distinguished Paper Award at ASE 2026" data-photo-caption="Second from left: my advisor David Lo. Third from left: me." aria-haspopup="dialog">ACM SIGSOFT Distinguished Paper Award</button> at ASE 2026.
+- <span class="news-date">2026-09</span> Our paper received an <button type="button" class="photo-link" data-photo-full="{{ '/assets/images/award-ase2026.jpg' | relative_url }}" data-photo-size="1800x1200" data-photo-alt="Receiving the ACM SIGSOFT Distinguished Paper Award at ASE 2026" data-photo-caption="Second from left: my advisor David Lo. Third from left: me." aria-haspopup="dialog">ACM SIGSOFT Distinguished Paper Award</button> at ASE 2026.
 - <span class="news-date">Pinned</span> We released [the first benchmark](https://github.com/iCSawyer/SecureVibeBench) for security in vibe coding of LLM agents. 
 
 {% comment %} Older news (only the latest three are shown):
