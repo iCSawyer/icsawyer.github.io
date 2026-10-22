@@ -26,6 +26,16 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
 
 ***
 
+# Awards
+- <span class="award-highlight">ACM SIGSOFT Distinguished Paper Award</span> at ASE 2026, ACM SIGSOFT, 2026
+- <span class="award-highlight">ACM SIGSOFT Distinguished Paper Award</span> at ICSE 2024, ACM SIGSOFT, 2024
+- <span class="award-highlight">SAC Highlight Award</span> at ACL 2026, ACL, 2026
+- National Scholarship, Ministry of Education of P.R.C., 2024
+- SMU SCIS Research Excellence Award, SMU, 2025, 2026
+- ACM SIGSOFT CAPS Travel Grant, 2025
+
+***
+
 # Publications
 
 {% comment %}26.07{% endcomment %}
@@ -81,7 +91,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg">新智元</a> (in Chinese).</span>
 
 <details class="pub-section" markdown="block">
-  <summary class="pub-toggle"><span class="pub-toggle__more">Show all</span><span class="pub-toggle__less">Collapse</span></summary>
+  <summary class="pub-toggle"><span class="pub-toggle__more">Show all publications</span><span class="pub-toggle__less">Show less</span></summary>
 
 {% comment %}25.06{% endcomment %}
 - [**Understanding Practitioners' Expectations on Clear Code Review Comments**](https://dl.acm.org/doi/10.1145/3728931)<br/>
@@ -136,16 +146,6 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
 
 ***
 
-
-# Awards
-- <span class="award-highlight">ACM SIGSOFT Distinguished Paper Award</span> at ASE 2026, ACM SIGSOFT, 2026
-- <span class="award-highlight">ACM SIGSOFT Distinguished Paper Award</span> at ICSE 2024, ACM SIGSOFT, 2024
-- <span class="award-highlight">SAC Highlight Award</span> at ACL 2026, ACL, 2026
-- SMU SCIS Research Excellence Award, SMU, 2025, 2026
-- National Scholarship, Ministry of Education of P.R.C., 2024
-- ACM SIGSOFT CAPS Travel Grant, 2025
-
-***
 
 # Services
 ### Program Committee / Journal Reviewer

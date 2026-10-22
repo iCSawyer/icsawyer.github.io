@@ -6,10 +6,10 @@ main:
   #  url: https://scholar.google.com/citations?user=NsuX8R8AAAAJ&hl=en
   - title: "News"
     url: /#news
-  - title: "Publications"
-    url: /#publications
   - title: "Awards"
     url: /#awards
+  - title: "Publications"
+    url: /#publications
   - title: "Services"
     url: /#services
   # - title: "Blog" #Max's blog, already finished, just unpublished

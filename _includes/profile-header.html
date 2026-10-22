@@ -25,6 +25,12 @@
   <div class="photo-viewer__frame">
     <div class="photo-viewer__photo">
       <img class="photo-viewer__img" alt="">
+      {% comment %} Shown over the placeholder when the photo is slow to load, or fails {% endcomment %}
+      <div class="photo-viewer__status" role="status" aria-live="polite">
+        <span class="photo-viewer__spinner" aria-hidden="true"></span>
+        <span class="photo-viewer__status-text photo-viewer__status-text--loading">Loading photo…</span>
+        <span class="photo-viewer__status-text photo-viewer__status-text--error">Couldn't load the photo. Please try again later.</span>
+      </div>
     </div>
     <div class="photo-viewer__caption"></div>
   </div>
@@ -76,7 +82,15 @@
     }
     window.addEventListener('resize', function () { if (viewer.open) fit(); });
 
-    // Open straight away; the photo fades in once it has loaded
+    // Open straight away; the photo fades in once it has loaded.
+    // If it takes longer than a moment, a spinner says so; if it fails, a message does.
+    var slowTimer;
+    function finishLoading(ok) {
+      clearTimeout(slowTimer);
+      viewer.classList.remove('is-loading', 'is-slow');
+      viewer.classList.toggle('is-error', !ok);
+    }
+
     document.addEventListener('click', function (event) {
       var trigger = triggerFor(event);
       if (!trigger || viewer.open) return;
@@ -87,16 +101,24 @@
       ratio = size[0] && size[1] ? size[0] / size[1] : 4 / 5;
       fit();
 
-      viewer.classList.add('is-loading');
-      img.src = url;
       img.alt = trigger.dataset.photoAlt || '';
       viewer.setAttribute('aria-label', img.alt || 'Photo');
       caption.textContent = trigger.dataset.photoCaption || '';
       caption.hidden = !trigger.dataset.photoCaption;
 
-      function reveal() { if (img.src.indexOf(url) !== -1) viewer.classList.remove('is-loading'); }
-      if (img.complete && img.naturalWidth) reveal();
-      else img.decode().then(reveal, reveal);
+      clearTimeout(slowTimer);
+      viewer.classList.remove('is-error', 'is-slow');
+      viewer.classList.add('is-loading');
+      img.onload = function () {
+        img.decode().then(function () { finishLoading(true); }, function () { finishLoading(true); });
+      };
+      img.onerror = function () { finishLoading(false); };
+      if (img.getAttribute('src') === url && img.complete && img.naturalWidth) {
+        finishLoading(true); // same photo as last time, already loaded
+      } else {
+        slowTimer = setTimeout(function () { viewer.classList.add('is-slow'); }, 300);
+        img.src = url;
+      }
 
       viewer.showModal();
     });
