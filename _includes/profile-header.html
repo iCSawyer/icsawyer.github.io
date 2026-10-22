@@ -1,0 +1,93 @@
+{% assign author = site.author %}
+<header class="profile-header" itemscope itemtype="http://schema.org/Person">
+  {% comment %} A button (not a .jpg link) so the theme's default lightbox stays out of the way {% endcomment %}
+  <button type="button" class="profile-header__photo" data-full="{{ '/assets/images/photo-large.jpg' | relative_url }}" data-hdr="{{ '/assets/images/photo-hdr.avif' | relative_url }}" aria-label="View larger photo" aria-haspopup="dialog">
+    <img class="profile-header__avatar" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
+  </button>
+  <div class="profile-header__title">
+    <h1 class="profile-header__name" itemprop="name">{{ author.name }}</h1>
+    <ul class="profile-header__links">
+      <li><a href="mailto:{{ author.email }}" title="Email" aria-label="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a></li>
+      <li><a href="https://scholar.google.com/citations?user={{ author.google_scholar }}&hl=en" title="Google Scholar" aria-label="Google Scholar" itemprop="sameAs"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="LinkedIn" aria-label="LinkedIn" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="https://github.com/{{ author.github }}" title="GitHub" aria-label="GitHub" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a></li>
+      <li><a href="https://x.com/{{ author.twitter }}" title="Twitter" aria-label="Twitter" itemprop="sameAs"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  {% if include.intro %}
+  <div class="profile-header__intro">
+    {{ include.intro | markdownify }}
+  </div>
+  {% endif %}
+</header>
+
+<dialog class="photo-viewer" aria-label="Photo of {{ author.name }}">
+  <div class="photo-viewer__frame">
+    <div class="photo-viewer__photo">
+      <img class="photo-viewer__img" width="1200" height="1500" alt="{{ author.name }}">
+      {% comment %} Fades in over the photo: real HDR highlights on HDR screens, a gentle boost elsewhere {% endcomment %}
+      <img class="photo-viewer__glow" width="1200" height="1500" alt="" aria-hidden="true">
+    </div>
+    <div class="photo-viewer__caption">Thanks for the interest (?) 🤔</div>
+  </div>
+  <button type="button" class="photo-viewer__close" aria-label="Close">&times;</button>
+</dialog>
+
+<script>
+  (function () {
+    var trigger = document.querySelector('.profile-header__photo');
+    var viewer = document.querySelector('.photo-viewer');
+    if (!trigger || !viewer) return;
+    var frame = viewer.querySelector('.photo-viewer__frame');
+    var img = viewer.querySelector('.photo-viewer__img');
+    var glow = viewer.querySelector('.photo-viewer__glow');
+    var hdrScreen = window.matchMedia('(dynamic-range: high)').matches;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    // Load and decode the large photos ahead of time, so opening doesn't stutter
+    var ready = null;
+    function preload() {
+      if (!ready) {
+        img.src = trigger.dataset.full;
+        glow.src = hdrScreen ? trigger.dataset.hdr : trigger.dataset.full;
+        glow.classList.toggle('is-sdr', !hdrScreen);
+        ready = Promise.all([img.decode(), glow.decode()]).catch(function () {});
+      }
+      return ready;
+    }
+    trigger.addEventListener('pointerenter', preload);
+    trigger.addEventListener('focus', preload);
+    trigger.addEventListener('touchstart', preload, { passive: true });
+
+    trigger.addEventListener('click', function () {
+      if (!viewer.showModal) { window.location.href = trigger.dataset.full; return; }
+      preload().then(function () {
+        if (viewer.open) return;
+        viewer.showModal();
+        // Two frames later so the highlight fade-in actually transitions
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { viewer.classList.add('is-lit'); });
+        });
+      });
+    });
+
+    // Closing plays the opening animation in reverse, then closes the dialog
+    function closeViewer() {
+      if (!viewer.open || viewer.classList.contains('is-closing')) return;
+      viewer.classList.remove('is-lit');
+      if (reduceMotion.matches) { viewer.close(); return; }
+      viewer.classList.add('is-closing');
+      frame.addEventListener('animationend', function () {
+        viewer.classList.remove('is-closing');
+        viewer.close();
+      }, { once: true });
+    }
+
+    // A click anywhere (photo, backdrop or the close button) closes it; so does Esc
+    viewer.addEventListener('click', closeViewer);
+    viewer.addEventListener('cancel', function (event) {
+      event.preventDefault();
+      closeViewer();
+    });
+  })();
+</script>
