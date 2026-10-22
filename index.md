@@ -15,7 +15,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
 
 # News
 
-- <span class="news-date">2026-09</span> Our paper received an **ACM SIGSOFT Distinguished Paper Award** at ASE 2026.
+- <span class="news-date">2026-09</span> Our paper received an <button type="button" class="photo-link" data-photo-full="{{ '/assets/images/award-ase2026.jpg' | relative_url }}" data-photo-alt="Receiving the ACM SIGSOFT Distinguished Paper Award at ASE 2026" data-photo-caption="Second from left: my advisor David Lo. Third from left: me." aria-haspopup="dialog">ACM SIGSOFT Distinguished Paper Award</button> at ASE 2026.
 - <span class="news-date">Pinned</span> We released [the first benchmark](https://github.com/iCSawyer/SecureVibeBench) for security in vibe coding of LLM agents. 
 
 {% comment %} Older news (only the latest three are shown):
@@ -40,15 +40,15 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   <strong>Junkai Chen<span class="eq-contrib">*</span></strong>, Zhiyuan Pan<span class="eq-contrib">*</span>, Xing Hu, Zhenhao Li, Ge Li, and Xin Xia.<br/>
   <span class="pub-venue">ICSE 2025</span> <span class="pub-venue-full">The 47th IEEE/ACM International Conference on Software Engineering</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2403.16437.pdf" target="_blank">PDF</a><a class="pub-link" href="https://github.com/r-eval/r-eval.github.io" target="_blank">Code</a><a class="pub-link" href="https://huggingface.co/datasets/JetBrains-Research/REval" target="_blank">Dataset</a><br/>
-  {% comment %} <span class="pub-note">Number 60 in <a href="https://jiekeshi.tech/topnotchse/se_ntop100.html" target="_blank" style="text-decoration: underline;">Normalized Top-100 Software Engineering Conference Papers</a> of all time.<br/>🤗 Included by <a href="https://huggingface.co/datasets/JetBrains-Research/REval" style="text-decoration: underline;">JetBrains-Research</a>.</span> {% endcomment %}
-  <span class="pub-note">Adopted by <a href="https://huggingface.co/datasets/JetBrains-Research/REval" style="text-decoration: underline;">JetBrains-Research</a>.</span>
+  {% comment %} <span class="pub-note">Number 60 in <a href="https://jiekeshi.tech/topnotchse/se_ntop100.html" target="_blank">Normalized Top-100 Software Engineering Conference Papers</a> of all time.<br/>🤗 Included by <a href="https://huggingface.co/datasets/JetBrains-Research/REval">JetBrains-Research</a>.</span> {% endcomment %}
+  <span class="pub-note">Adopted by <a href="https://huggingface.co/datasets/JetBrains-Research/REval">JetBrains-Research</a>.</span>
 
 {% comment %}24.04{% endcomment %}
 - [**Code Search is All You Need? Improving Code Suggestions with Code Search**](https://dl.acm.org/doi/10.1145/3597503.3639085)<br/>
   **Junkai Chen**, Xing Hu, Zhenhao Li, Cuiyun Gao, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">ICSE 2024</span> <span class="pub-venue-full">The 46th IEEE/ACM International Conference on Software Engineering</span><br/>
   <a class="pub-link" href="https://ginolzh.github.io/papers/ICSE2024_Code_Suggestion.pdf" target="_blank">PDF</a><a class="pub-link" href="https://github.com/iCSawyer/CodeSuggestion" target="_blank">Code</a><br/>
-  <span class="pub-note"><a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
+  <span class="pub-note"><a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank">ACM SIGSOFT Distinguished Paper Award</a>.</span>
   {% comment %} acm showcase on kudos??? {% endcomment %}
 
 {% comment %}26.10?{% endcomment %}
@@ -56,14 +56,14 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   <strong>Junkai Chen</strong>, Chengran Yang, Xing Hu, Zhenhao Li, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">ASE 2026</span> <span class="pub-venue-full">The 41st IEEE/ACM International Conference on Automated Software Engineering</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2608.05959" target="_blank">PDF</a><a class="pub-link" href="https://github.com/iCSawyer/AgentExecutor" target="_blank">Code</a>
-  <span class="pub-note"><a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank" style="text-decoration: underline;">ACM SIGSOFT Distinguished Paper Award</a>.</span>
+  <span class="pub-note"><a href="https://www2.sigsoft.org/awards/distinguishedpaper/" target="_blank">ACM SIGSOFT Distinguished Paper Award</a>.</span>
 
 {% comment %}26.07{% endcomment %}
 - [**SeCuRepair: Semantics-Aligned, Curriculum-Driven, and Reasoning-Enhanced Vulnerability Repair Framework**](https://arxiv.org/abs/2510.01002)<br/>
   Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">ACL 2026</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>
-  <span class="pub-note">SAC Highlight Award.</span>
+  <span class="pub-note">Oral; SAC Highlight Award.</span>
 
 {% comment %}?{% endcomment %}
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
@@ -71,14 +71,14 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   {% comment %} Martin Weyssow, Chengran Yang, <strong>Junkai Chen<span class="corresp">📧</span></strong>, Ratnadira Widyasari, Ting Zhang, Huihui Huang, Huu Hung Nguyen, Yan Naing Tun, Tan Bui, Yikun Li, Ang Han Wei, Frank Liauw, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/> {% endcomment %}
   <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2504.04699" target="_blank">PDF</a><a class="pub-link" href="https://github.com/martin-wey/R2Vul" target="_blank">Code</a>
-  <span class="pub-note">Top-liked in software engineering at <a href="https://www.alphaxiv.org/?subcategories=%5B%22software-engineering%22%5D&sort=Likes" style="text-decoration: underline;">alphaXiv</a>.</span>
+  <span class="pub-note">Top-liked in software engineering at <a href="https://www.alphaxiv.org/?subcategories=%5B%22software-engineering%22%5D&sort=Likes">alphaXiv</a>.</span>
 
 {% comment %}25.12{% endcomment %}
 - [**Assessing and Advancing Benchmarks for Evaluating Large Language Models in Software Engineering Tasks**](https://dl.acm.org/doi/10.1145/3786771)<br/>
   Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a><a class="pub-link" href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a><br/>
-  <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg" style="text-decoration: underline;">新智元</a> (in Chinese).</span>
+  <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg">新智元</a> (in Chinese).</span>
 
 <details class="pub-section" markdown="block">
   <summary class="pub-toggle"><span class="pub-toggle__more">Show all</span><span class="pub-toggle__less">Collapse</span></summary>

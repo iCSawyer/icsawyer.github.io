@@ -1,7 +1,7 @@
 {% assign author = site.author %}
 <header class="profile-header" itemscope itemtype="http://schema.org/Person">
   {% comment %} A button (not a .jpg link) so the theme's default lightbox stays out of the way {% endcomment %}
-  <button type="button" class="profile-header__photo" data-full="{{ '/assets/images/photo-large.jpg' | relative_url }}" data-hdr="{{ '/assets/images/photo-hdr.avif' | relative_url }}" aria-label="View larger photo" aria-haspopup="dialog">
+  <button type="button" class="profile-header__photo" data-photo-full="{{ '/assets/images/photo-large.jpg' | relative_url }}" data-photo-alt="{{ author.name }}" data-photo-caption="Thanks for the interest (?) 🤔" aria-label="View larger photo" aria-haspopup="dialog">
     <img class="profile-header__avatar" src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image">
   </button>
   <div class="profile-header__title">
@@ -21,60 +21,69 @@
   {% endif %}
 </header>
 
-<dialog class="photo-viewer" aria-label="Photo of {{ author.name }}">
+<dialog class="photo-viewer" aria-label="Photo">
   <div class="photo-viewer__frame">
     <div class="photo-viewer__photo">
-      <img class="photo-viewer__img" width="1200" height="1500" alt="{{ author.name }}">
-      {% comment %} Fades in over the photo: real HDR highlights on HDR screens, a gentle boost elsewhere {% endcomment %}
-      <img class="photo-viewer__glow" width="1200" height="1500" alt="" aria-hidden="true">
+      <img class="photo-viewer__img" alt="">
     </div>
-    <div class="photo-viewer__caption">Thanks for the interest (?) 🤔</div>
+    <div class="photo-viewer__caption"></div>
   </div>
   <button type="button" class="photo-viewer__close" aria-label="Close">&times;</button>
 </dialog>
 
 <script>
+  // Any element with data-photo-full opens that photo here (optional data-photo-alt / data-photo-caption)
   (function () {
-    var trigger = document.querySelector('.profile-header__photo');
     var viewer = document.querySelector('.photo-viewer');
-    if (!trigger || !viewer) return;
+    if (!viewer) return;
     var frame = viewer.querySelector('.photo-viewer__frame');
     var img = viewer.querySelector('.photo-viewer__img');
-    var glow = viewer.querySelector('.photo-viewer__glow');
-    var hdrScreen = window.matchMedia('(dynamic-range: high)').matches;
+    var caption = viewer.querySelector('.photo-viewer__caption');
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    // Load and decode the large photos ahead of time, so opening doesn't stutter
-    var ready = null;
-    function preload() {
-      if (!ready) {
-        img.src = trigger.dataset.full;
-        glow.src = hdrScreen ? trigger.dataset.hdr : trigger.dataset.full;
-        glow.classList.toggle('is-sdr', !hdrScreen);
-        ready = Promise.all([img.decode(), glow.decode()]).catch(function () {});
+    // Load and decode a photo ahead of time, so opening doesn't stutter
+    var loading = {};
+    function preload(url) {
+      if (!loading[url]) {
+        var probe = new Image();
+        probe.src = url;
+        loading[url] = probe.decode().catch(function () {});
       }
-      return ready;
+      return loading[url];
     }
-    trigger.addEventListener('pointerenter', preload);
-    trigger.addEventListener('focus', preload);
-    trigger.addEventListener('touchstart', preload, { passive: true });
 
-    trigger.addEventListener('click', function () {
-      if (!viewer.showModal) { window.location.href = trigger.dataset.full; return; }
-      preload().then(function () {
-        if (viewer.open) return;
-        viewer.showModal();
-        // Two frames later so the highlight fade-in actually transitions
-        requestAnimationFrame(function () {
-          requestAnimationFrame(function () { viewer.classList.add('is-lit'); });
-        });
+    function triggerFor(event) {
+      return event.target.closest ? event.target.closest('[data-photo-full]') : null;
+    }
+
+    function warmUp(event) {
+      var trigger = triggerFor(event);
+      if (trigger) preload(trigger.dataset.photoFull);
+    }
+    document.addEventListener('pointerover', warmUp);
+    document.addEventListener('focusin', warmUp);
+    document.addEventListener('touchstart', warmUp, { passive: true });
+
+    document.addEventListener('click', function (event) {
+      var trigger = triggerFor(event);
+      if (!trigger || viewer.open) return;
+      var url = trigger.dataset.photoFull;
+      if (!viewer.showModal) { window.location.href = url; return; } // very old browsers
+      preload(url).then(function () {
+        img.src = url;
+        img.alt = trigger.dataset.photoAlt || '';
+        viewer.setAttribute('aria-label', img.alt || 'Photo');
+        caption.textContent = trigger.dataset.photoCaption || '';
+        caption.hidden = !trigger.dataset.photoCaption;
+        return img.decode().catch(function () {});
+      }).then(function () {
+        if (!viewer.open) viewer.showModal();
       });
     });
 
     // Closing plays the opening animation in reverse, then closes the dialog
     function closeViewer() {
       if (!viewer.open || viewer.classList.contains('is-closing')) return;
-      viewer.classList.remove('is-lit');
       if (reduceMotion.matches) { viewer.close(); return; }
       viewer.classList.add('is-closing');
       frame.addEventListener('animationend', function () {
