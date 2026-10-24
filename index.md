@@ -5,9 +5,9 @@ title: "Junkai Chen's Homepage"
 ---
 
 {% capture intro %}
-I am a second-year Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/).
+I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/).
 
-I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, and security. My work has received wide recognition, including two [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://arxiv.org/abs/2510.01002), and has attracted interest from various entities like [新智元](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval).
+I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, and security. My work has received wide recognition, including two [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [新智元](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval).
 {% endcapture %}
 {% include profile-header.html intro=intro %}
 
@@ -73,7 +73,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">ACL 2026</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>
-  <span class="pub-note">Oral; SAC Highlight Award.</span>
+  <span class="pub-note">Oral; <a href="https://lnkd.in/p/gU7ucP4z" target="_blank">SAC Highlight Award</a>.</span>
 
 {% comment %}?{% endcomment %}
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
