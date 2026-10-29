@@ -7,7 +7,7 @@ title: "Junkai Chen's Homepage"
 {% capture intro %}
 I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/).
 
-I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, and security. My work has received wide recognition, including two [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [新智元](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval).
+I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, and security. My work has received wide recognition, including two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
 {% endcapture %}
 {% include profile-header.html intro=intro %}
 
@@ -88,7 +88,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
   Xing Hu, Feifei Niu, **Junkai Chen**, Xin Zhou, Junwei Zhang, Junda He, Xin Xia, and David Lo.<br/>
   <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a><a class="pub-link" href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a><br/>
-  <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg">新智元</a> (in Chinese).</span>
+  <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg">AI Era</a> (in Chinese).</span>
 
 <details class="pub-section" markdown="block">
   <summary class="pub-toggle"><span class="pub-toggle__more">Show all publications</span><span class="pub-toggle__less">Show less</span></summary>
