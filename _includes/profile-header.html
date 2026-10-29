@@ -7,11 +7,11 @@
   <div class="profile-header__title">
     <h1 class="profile-header__name" itemprop="name">{{ author.name }}</h1>
     <ul class="profile-header__links">
-      <li><a href="mailto:{{ author.email }}" title="Email" aria-label="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a></li>
-      <li><a href="https://scholar.google.com/citations?user={{ author.google_scholar }}&hl=en" title="Google Scholar" aria-label="Google Scholar" itemprop="sameAs"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="LinkedIn" aria-label="LinkedIn" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
-      <li><a href="https://github.com/{{ author.github }}" title="GitHub" aria-label="GitHub" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a></li>
-      <li><a href="https://x.com/{{ author.twitter }}" title="Twitter" aria-label="Twitter" itemprop="sameAs"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a class="profile-header__link--email" href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span class="profile-header__label">Email</span></a></li>
+      <li><a class="profile-header__link--scholar" href="https://scholar.google.com/citations?user={{ author.google_scholar }}&hl=en" itemprop="sameAs"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="profile-header__label">Google Scholar</span></a></li>
+      <li><a class="profile-header__link--linkedin" href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="profile-header__label">LinkedIn</span></a></li>
+      <li><a class="profile-header__link--github" href="https://github.com/{{ author.github }}" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="profile-header__label">GitHub</span></a></li>
+      <li><a class="profile-header__link--twitter" href="https://x.com/{{ author.twitter }}" itemprop="sameAs"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span class="profile-header__label">Twitter</span></a></li>
     </ul>
   </div>
   {% if include.intro %}

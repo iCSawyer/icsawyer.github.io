@@ -442,10 +442,55 @@ a {
 
   a, a:visited {
     display: inline-flex;
+    align-items: center;
     padding: 0.2em;
     color: $muted-color;
     text-decoration: none;
     &:hover { color: $text-color; }
+  }
+}
+
+/* On hover each icon takes its own brand colour (Email has none, so it takes the site's green).
+   #main outweighs the theme's `.page__content a:not(#goog-wm-sb):hover` */
+$profile-link-colors: (
+  email: $link-color,
+  scholar: #4285f4,
+  linkedin: #0a66c2,
+  github: #181717,
+  twitter: #1d9bf0
+);
+
+@each $name, $color in $profile-link-colors {
+  #main .profile-header__links a.profile-header__link--#{$name}:hover,
+  #main .profile-header__links a.profile-header__link--#{$name}:focus-visible {
+    color: $color;
+  }
+}
+
+/* The name slides out beside the icon on hover (still read out by screen readers when hidden) */
+.page__content .profile-header__label {
+  display: inline-block;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  font-size: 0.72em;
+  font-weight: 500;
+  line-height: 1.4; /* the list's line-height of 1 clips descenders like the g in "Google" */
+  transition: max-width 0.3s ease, margin-left 0.3s ease, opacity 0.2s ease;
+}
+
+.page__content .profile-header__links a:focus-visible .profile-header__label {
+  max-width: 8em;
+  margin-left: 0.35em;
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .page__content .profile-header__links a:hover .profile-header__label {
+    max-width: 8em;
+    margin-left: 0.35em;
+    opacity: 1;
   }
 }
 
