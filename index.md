@@ -7,7 +7,7 @@ title: "Junkai Chen's Homepage"
 {% capture intro %}
 I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/).
 
-I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, and security. My work has received wide recognition, including two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
+I build, train, and evaluate LLMs and agents for their capability, reliability, and security. My work has received wide recognition, including two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
 {% endcapture %}
 {% include profile-header.html intro=intro %}
 
@@ -149,7 +149,7 @@ I build, enhance, and evaluate LLMs and agents for their efficacy, reliability, 
 
 # Services
 ### Program Committee / Journal Reviewer
-- 2026: TSE, NeurIPS, TOSEM, IST, ICSE (Shadow PC), MSR (Junior PC), DL4C@NeurIPS, EASE (AI Models / Data Track), Communications AI & Computing
+- 2026: TSE, NeurIPS, ACL ARR, TOSEM, IST, ASEJ, ICSE (Shadow PC), ICSE (NIER Track), MSR (Junior PC), MSR (Mining Challenge), DL4C@NeurIPS, EASE (AI Models / Data Track), Communications AI & Computing
 - 2025: MSR (Junior PC), DL4C@ICLR, LTB@ICPE
 
 ### Others
