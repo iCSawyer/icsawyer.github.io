@@ -5,7 +5,7 @@ title: "Junkai Chen's Homepage"
 ---
 
 {% capture intro %}
-I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/).
+I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/). I received my master's degree at [Zhejiang University](https://www.zju.edu.cn/english/), advised by [Prof. Xing Hu](https://xing-hu.github.io/) and [Prof. Xin Xia](https://xin-xia.github.io/). 
 
 I build, train, and evaluate LLMs and agents for their capability, reliability, and security. My work has received wide recognition, including two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
 {% endcapture %}
