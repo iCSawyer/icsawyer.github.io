@@ -7,7 +7,7 @@ title: "Junkai Chen's Homepage"
 {% capture intro %}
 I am a Ph.D. student at [Singapore Management University](https://www.smu.edu.sg/), advised by [Prof. David Lo](http://www.mysmu.edu/faculty/davidlo/). I received my master's degree at [Zhejiang University](https://www.zju.edu.cn/english/), advised by [Prof. Xing Hu](https://xing-hu.github.io/) and [Prof. Xin Xia](https://xin-xia.github.io/). 
 
-I build, train, and evaluate LLMs and agents for their capability, reliability, and security. My work has received wide recognition, including two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/) and one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z), and has attracted interest from various entities like [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), [alphaXiv](https://x.com/junkaichen2000/status/2047932312353124392), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
+I build, train, and evaluate LLMs and agents for their capability, reliability, and security. My work has received wide recognition, including **two first-author [ACM SIGSOFT Distinguished Paper Awards](https://www2.sigsoft.org/awards/distinguishedpaper/)** and **one [ACL SAC Highlight Award](https://lnkd.in/p/gU7ucP4z)**, and has attracted interest from various entities like [OWASP](https://github.com/OWASP/AISVS/blob/main/1.0/research/appendices/Appendix-C-AI-Secure-Coding.md), [JetBrains](https://huggingface.co/datasets/JetBrains-Research/REval), and [AI Era](https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg).
 {% endcapture %}
 {% include profile-header.html intro=intro %}
 
@@ -73,7 +73,16 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
   Chengran Yang, Ting Zhang, Jinfeng Jiang, Xin Zhou, Haoye Tian, Mingzhe Du, Jieke Shi, **Junkai Chen**, Yikun Li, Eng Lieh Ouh, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">ACL 2026</span> <span class="pub-venue-full">The 64th Annual Meeting of the Association for Computational Linguistics</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2510.01002" target="_blank">PDF</a>
-  <span class="pub-note">Oral; <a href="https://lnkd.in/p/gU7ucP4z" target="_blank">SAC Highlight Award</a>.</span>
+  <span class="pub-note">Oral &amp; <a href="https://lnkd.in/p/gU7ucP4z" target="_blank">SAC Highlight Award</a>.</span>
+
+- [**Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild**](https://arxiv.org/abs/2603.28592)<br/>
+  Yue Liu, Ratnadira Widyasari, Yanjie Zhao, Ivana Clairine Irsan, **Junkai Chen**, and David Lo.<br/>
+  <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
+  <a class="pub-link" href="https://arxiv.org/pdf/2603.28592" target="_blank">PDF</a>
+  <span class="pub-note">Referenced by <a href="https://github.com/OWASP/AISVS/blob/main/1.0/research/appendices/Appendix-C-AI-Secure-Coding.md" target="_blank">OWASP AISVS</a>.</span>
+
+<details class="pub-section" markdown="block">
+  <summary class="pub-toggle"><span class="pub-toggle__more">Show all publications</span><span class="pub-toggle__less">Show less</span></summary>
 
 {% comment %}?{% endcomment %}
 - [**R2Vul: Learning to Reason about Software Vulnerabilities with Reinforcement Learning and Structured Reasoning Distillation**](https://arxiv.org/abs/2504.04699)<br/>
@@ -89,9 +98,6 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
   <span class="pub-venue">TOSEM 2026</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2505.08903" target="_blank">PDF</a><a class="pub-link" href="https://github.com/LLM4SE-Benchmarks/LLM4SE-Benchmarks" target="_blank">Code</a><br/>
   <span class="pub-note">Featured by <a href="https://mp.weixin.qq.com/s/zHVWchAOONC2Y75PvYNDBg">AI Era</a> (in Chinese).</span>
-
-<details class="pub-section" markdown="block">
-  <summary class="pub-toggle"><span class="pub-toggle__more">Show all publications</span><span class="pub-toggle__less">Show less</span></summary>
 
 {% comment %}25.06{% endcomment %}
 - [**Understanding Practitioners' Expectations on Clear Code Review Comments**](https://dl.acm.org/doi/10.1145/3728931)<br/>
@@ -114,11 +120,6 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
   Gou Tan, Pengfei Chen, Zhensu Sun, Jieke Shi, **Junkai Chen**, Ting Zhang, Weifeng Sun, Junda He, Shuai Liang, Chuanfu Zhang, Lwin Khin Shar, and David Lo.<br/>
   <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2609.39086" target="_blank">PDF</a>
-
-- [**Debt Behind the AI Boom: A Large-Scale Empirical Study of AI-Generated Code in the Wild**](https://arxiv.org/abs/2603.28592)<br/>
-  Yue Liu, Ratnadira Widyasari, Yanjie Zhao, Ivana Clairine Irsan, **Junkai Chen**, and David Lo.<br/>
-  <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
-  <a class="pub-link" href="https://arxiv.org/pdf/2603.28592" target="_blank">PDF</a>
 
 - [**AgentSZZ: Teaching the LLM Agent to Play Detective with Bug-Inducing Commits**](https://arxiv.org/abs/2604.02665)<br/>
   Yunbo Lyu, Jieke Shi, Hong Jin Kang, Ratnadira Widyasari, Junda He, Yuqing Niu, Chengran Yang, **Junkai Chen**, Zhou Yang, Julia Lawall, and David Lo.<br/>
