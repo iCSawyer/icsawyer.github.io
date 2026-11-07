@@ -498,6 +498,7 @@ $profile-link-colors: (
 .page__content .profile-header__intro {
   grid-area: intro;
   > p:last-child { margin-bottom: 0; }
+  strong { font-weight: 600; } /* Inter is only loaded up to 600; asking for 700 gets a faux bold */
 
   @media (max-width: $label-breakpoint - 1) { margin-top: 1em; }
 }
