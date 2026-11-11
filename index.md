@@ -150,6 +150,7 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
 
 # Services
 ### Program Committee / Journal Reviewer
+- 2027: ISSRE
 - 2026: TSE, NeurIPS, ACL ARR, TOSEM, IST, ASEJ, ICSE (Shadow PC), ICSE (NIER Track), MSR (Junior PC), MSR (Mining Challenge), DL4C@NeurIPS, EASE (AI Models / Data Track), Communications AI & Computing
 - 2025: MSR (Junior PC), DL4C@ICLR, LTB@ICPE
 
