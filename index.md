@@ -111,6 +111,11 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
   <span class="pub-venue">TOSEM 2025</span> <span class="pub-venue-full">ACM Transactions on Software Engineering and Methodology</span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2406.19783" target="_blank">PDF</a><a class="pub-link" href="https://github.com/iCSawyer/NLPerturbator" target="_blank">Code</a>
 
+- [**"Shall We Approve?" Consequence-Aware Approval for Autonomous Coding Agents**](https://arxiv.org/abs/2610.40753)<br/>
+  Weiheng Wu, **Junkai Chen**, Zhensu Sun, Jieke Shi, Yunbo Lyu, and David Lo.<br/>
+  <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
+  <a class="pub-link" href="https://arxiv.org/pdf/2610.40753" target="_blank">PDF</a>
+
 - [**SWE-NFI: Studying and Benchmarking Coding Agents for Non-Functional Improvements**](https://arxiv.org/abs/2607.27409)<br/>
   Pengyu Xue, He Yang Yuan, Xin Wang, **Junkai Chen**, Haonan Zhang, Boyuan Chen, Zishuo Ding, Zhenhao Li, and Weiyi Shang.<br/>
   <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
@@ -125,6 +130,11 @@ I build, train, and evaluate LLMs and agents for their capability, reliability, 
   Yunbo Lyu, Jieke Shi, Hong Jin Kang, Ratnadira Widyasari, Junda He, Yuqing Niu, Chengran Yang, **Junkai Chen**, Zhou Yang, Julia Lawall, and David Lo.<br/>
   <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
   <a class="pub-link" href="https://arxiv.org/pdf/2604.02665" target="_blank">PDF</a>
+
+- [**Open the Oyster: Empirical Evaluation and Improvement of Code Reasoning Confidence in LLMs**](https://arxiv.org/abs/2511.02197)<br/>
+  Shufan Wang, Xing Hu, **Junkai Chen**, Zhiyuan Pan, and Xin Xia.<br/>
+  <span class="pub-venue">Preprint</span> <span class="pub-venue-full"></span><br/>
+  <a class="pub-link" href="https://arxiv.org/pdf/2511.02197" target="_blank">PDF</a>
 
 {% comment %}26.10?{% endcomment %}
 - [**An Empirical Study of Speculative Decoding on Software Engineering Tasks**](https://www.arxiv.org/abs/2604.26469)<br/>
